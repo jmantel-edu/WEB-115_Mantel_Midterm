@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amortization Calculator</title>
+    <link rel="stylesheet" src="styles.css">
+    <script defer src="amortizationCalculator.js"></script>
+</head>
+<body>
+    <div id="inputSpace" style="background-color: aqua;">
+        <h1>Amortization Calculator</h1>
+        <input type="text" placeholder="Initial Loan Amt. ($)" id="name"><br>
+        <input type="text" placeholder="Down Payment (%)" id="down"><br>
+        <input type="checkbox" id="longloan">
+        <label for="longloan">Loan Term: Check for 30 years, leave unchecked for 15 years</label>
+        <button onclick="calculate">Calculate Amortization</button>
+    </div>
+    <div id="results">
+
+    </div>
+</body>
+</html>
