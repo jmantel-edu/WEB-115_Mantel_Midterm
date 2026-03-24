@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amortization Calculator</title>
-    <link rel="stylesheet" src="styles.css">
     <script defer src="amortizationCalculator.js"></script>
 </head>
 <body>
-    <div id="inputSpace" style="background-color: aqua;">
+    <div id="inputSpace">
+        <p>Jordan Mantel / jmantel@my.waketech.edu / Written Mar 24 2026</p>
         <h1>Amortization Calculator</h1>
-        <input type="text" placeholder="Initial Loan Amt. ($)" id="name"><br>
+        <input type="text" placeholder="Initial Loan Amt. ($)" id="principal"><br>
         <input type="text" placeholder="Down Payment (%)" id="down"><br>
-        <input type="checkbox" id="longloan">
-        <label for="longloan">Loan Term: Check for 30 years, leave unchecked for 15 years</label>
-        <button onclick="calculate">Calculate Amortization</button>
+        <input type="text" placeholder="Loan Length (15 or 30 yrs)" id="loan">
+        <button type="button" onclick="doCalculation()">Do Calculation</button>
     </div>
     <div id="results">
 
